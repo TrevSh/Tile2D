@@ -15,6 +15,10 @@ public class Wallet : MonoBehaviour
         {
             instance = this;
         }
+        else
+        {
+            Destroy(gameObject);
+        }
 
         walletText.text = "$" + currentMoney.ToString(); //DONT FORGET .ToString()!!!!
     }
